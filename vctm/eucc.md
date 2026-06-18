@@ -2,6 +2,7 @@
 vct: uri:eu.eudi.eucc.1
 background_color: "#1a4f8a"
 text_color: "#ffffff"
+formats_: "sd-jwt", "w3c"
 ---
 
 # EU Company Certificate (EUCC)
@@ -34,7 +35,7 @@ A verifiable credential attesting to the legal existence and registration detail
 - `digital_contact_point` "Digital Contact Point" (object): Digital contact information
   - `website` (string): Website URL
   - `email` (string): Email address
-- `legal_representative` "Legal Representatives" (array): Persons or entities authorised to represent the legal person [mandatory]
+- `legal_representative` "Legal Representatives  ties authorised to represent the legal person [mandatory]
   - `full_name` (string): Full name of the natural person representative
   - `date_of_birth` (date): Date of birth of the natural person representative
   - `nationality` (string): Nationality of the natural person representative

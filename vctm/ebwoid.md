@@ -2,7 +2,7 @@
 vct: urn:eu.ebw.oid.1
 background_color: "#003087"
 text_color: "#ffffff"
-formats_: "sd-jwt", "w3c"
+formats: "sd-jwt", "w3c"
 
 ---
 

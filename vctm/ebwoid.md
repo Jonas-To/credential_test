@@ -3,7 +3,6 @@ vct: urn:eu:ebw:oid:1
 background_color: "#003087"
 text_color: "#ffffff"
 formats: "sd-jwt", "w3c"
-
 ---
 
 # European Business Wallet – Owner Identification Data (EBW-OID)

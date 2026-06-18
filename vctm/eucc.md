@@ -26,8 +26,8 @@ A verifiable credential attesting to the legal existence and registration detail
 - `registration_date` "Registration Date" (date): Date of registration in ISO 8601 YYYY-MM-DD format [mandatory]
 - `legal_person_status` "Legal Person Status" (string): Current status of the legal person (e.g. active) [mandatory]
 - `legal_person_activity` "Legal Person Activity" (object): Primary business activity [mandatory]
-  - `code` (string): Activity code (e.g. NACE)
-  - `description` (string): Description of the activity
+  - `code` (string): Activity code (e.g. NACE) [mandatory]
+  - `description` (string): Description of the activity [mandatory]
 - `share_capital` "Share Capital" (object): Share capital of the legal person
   - `amount` (string): Amount of share capital
   - `currency` (string): Currency code (ISO 4217)
@@ -36,13 +36,13 @@ A verifiable credential attesting to the legal existence and registration detail
   - `website` (string): Website URL
   - `email` (string): Email address
 - `legal_representative` "Legal Representatives" (array): Natural or legal person representatives authorised to represent the legal person [mandatory]
-  - `full_name` (string): Full name of the natural person representative
-  - `date_of_birth` (date): Date of birth of the natural person representative
-  - `nationality` (string): Nationality of the natural person representative
-  - `name` (string): Name of the legal person representative
-  - `id` (string): Identifier of the legal person representative
-  - `legal_form_type` (string): Legal form of the legal person representative
-  - `signatory_rule` (string): Signatory rule (e.g. alone, jointly)
+  - `full_name` (string): Full name of the natural person representative (Mandatory if natural person represenative)
+  - `date_of_birth` (date): Date of birth of the natural person representative (Mandatory if natural person represenative)
+  - `nationality` (string): Nationality of the natural person representative (Optional if natural person represenative)
+  - `name` (string): Name of the legal person representative (Mandatory if not a natural person represenative)
+  - `id` (string): Identifier of the legal person representative (EUID or similar) (Mandatory if not a natural person represenative)
+  - `legal_form_type` (string): Legal form of the legal person representative (Mandatory if not a natural person represenative)
+  - `signatory_rule` (string): Signatory rule (e.g. alone, jointly)  [mandatory]
 - `issuing_authority` "Issuing Authority" (string): Name of the authority that issued the EUCC [mandatory] [sd=never]
 - `issuing_authority_id` "Issuing Authority ID" (string): Identifier of the issuing authority [mandatory] [sd=never]
 - `issuing_country` "Issuing Country" (string): Alpha-2 country code of the issuing authority's country [mandatory] [sd=never]
